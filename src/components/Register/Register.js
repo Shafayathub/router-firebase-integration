@@ -14,13 +14,10 @@ const Register = () => {
           </div>
           <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
             <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
-              Sign Up
+              Please Register here
             </h2>
             <div className="relative mb-4">
-              <label
-                for="full-name"
-                className="leading-7 text-sm text-gray-600"
-              >
+              <label className="leading-7 text-sm text-gray-600">
                 Full Name
               </label>
               <input
@@ -31,9 +28,7 @@ const Register = () => {
               />
             </div>
             <div className="relative mb-4">
-              <label for="email" className="leading-7 text-sm text-gray-600">
-                Email
-              </label>
+              <label className="leading-7 text-sm text-gray-600">Email</label>
               <input
                 type="email"
                 id="email"
@@ -42,7 +37,7 @@ const Register = () => {
               />
             </div>
             <div className="relative mb-4">
-              <label for="password" className="leading-7 text-sm text-gray-600">
+              <label className="leading-7 text-sm text-gray-600">
                 Password
               </label>
               <input
@@ -54,6 +49,10 @@ const Register = () => {
             </div>
             <button className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
               Register
+            </button>
+            <button className="mt-2 text-white bg-blue-500 border-0 py-1 focus:outline-none hover:bg-blue-600 rounded text-lg flex justify-center items-center">
+              <img className="mr-2 h-12 w-12" src="../../google.png" alt="" />
+              Register with Google
             </button>
             <p className="text-xs text-gray-500 mt-3">
               We care about your privacy.
