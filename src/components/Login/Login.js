@@ -1,6 +1,8 @@
 import React from 'react';
+import useFirebase from '../../hooks/useFirebase';
 
 const Login = () => {
+  const { signInWithGoogle } = useFirebase();
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -35,7 +37,10 @@ const Login = () => {
             <button className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
               Login
             </button>
-            <button className="mt-2 text-white bg-blue-500 border-0 py-1 focus:outline-none hover:bg-blue-600 rounded text-lg flex justify-center items-center">
+            <button
+              onClick={signInWithGoogle}
+              className="mt-2 text-white bg-blue-500 border-0 py-1 focus:outline-none hover:bg-blue-600 rounded text-lg flex justify-center items-center"
+            >
               <img className="mr-2 h-12 w-12" src="../../google.png" alt="" />
               Log in with Google
             </button>
