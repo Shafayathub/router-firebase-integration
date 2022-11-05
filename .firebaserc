@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "email-password-auth-7b264"
-  }
+    "default": "router-firebase-integrat-d6db9",
+    "staging": "router-firebase-integrat-d6db9"
+  },
+  "targets": {},
+  "etags": {}
 }

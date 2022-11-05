@@ -15,6 +15,8 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_EMAIL_PASSWORD_AUTH_7B264 }}'
+          firebaseServiceAccount: >-
+            ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ROUTER_FIREBASE_INTEGRAT_D6DB9
+            }}
           channelId: live
-          projectId: email-password-auth-7b264
+          projectId: router-firebase-integrat-d6db9
