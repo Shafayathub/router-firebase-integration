@@ -1,8 +1,12 @@
+import { getAuth } from 'firebase/auth';
 import React from 'react';
-import useFirebase from '../../hooks/useFirebase';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import app from '../../firebase.init';
+
+const auth = getAuth(app);
 
 const Login = () => {
-  const { signInWithGoogle } = useFirebase();
+  const [signInWithGoogle, user] = useSignInWithGoogle(auth);
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -38,7 +42,7 @@ const Login = () => {
               Login
             </button>
             <button
-              onClick={signInWithGoogle}
+              onClick={() => signInWithGoogle()}
               className="mt-2 text-white bg-blue-500 border-0 py-1 focus:outline-none hover:bg-blue-600 rounded text-lg flex justify-center items-center"
             >
               <img className="mr-2 h-12 w-12" src="../../google.png" alt="" />
